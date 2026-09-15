@@ -4,44 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Galang</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <style>
+    :root { color-scheme: dark; font-family: "Trebuchet MS", sans-serif; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; min-width: 320px; background: #020617; color: #f8fafc; }
+    nav { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: 1152px; padding: 24px; }
+    nav h1 { color: #60a5fa; font-size: 1.5rem; margin: 0; }
+    nav a { color: #cbd5e1; font-size: .95rem; text-decoration: none; }
+    nav a:hover { color: #60a5fa; }
+    .hero { align-items: center; display: flex; min-height: 78vh; padding: 48px 24px; }
+    .hero-inner { margin: 0 auto; max-width: 1152px; width: 100%; }
+    .eyebrow { color: #60a5fa; font-size: 1.1rem; }
+    h2 { font-size: clamp(3rem, 8vw, 5.5rem); line-height: 1; margin: 16px 0; }
+    .intro { color: #cbd5e1; font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.7; margin: 0; max-width: 600px; }
+    .button { background: #3b82f6; border-radius: 8px; color: #fff; display: inline-block; font-weight: 700; margin-top: 32px; padding: 14px 22px; text-decoration: none; }
+    .button:hover { background: #2563eb; }
+    footer { border-top: 1px solid #334155; color: #94a3b8; padding: 24px; text-align: center; }
+    footer p { margin: 0; }
+    @media (max-width: 640px) { nav { padding: 20px; } .hero { min-height: 72vh; padding: 32px 20px; } }
+  </style>
 </head>
 
 <body class="bg-slate-950 text-white">
 
   <!-- Navbar -->
-  <nav class="flex items-center justify-between p-6 max-w-6xl mx-auto">
-    <h1 class="text-2xl font-bold text-blue-400">
+  <nav>
+    <h1>
       Galang.
     </h1>
 
-    <div class="flex gap-6">
-      <a href="index.html" class="hover:text-blue-400">
+    <div>
+      <a href="index.html">
         Home
       </a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="min-h-[80vh] flex items-center px-6">
-    <div class="max-w-6xl mx-auto w-full">
+  <section class="hero">
+    <div class="hero-inner">
 
-      <p class="text-blue-400 text-lg">
+      <p class="eyebrow">
         Hello, I'm
       </p>
 
-      <h2 class="text-4xl md:text-6xl font-bold mt-3">
+      <h2>
         Galang
       </h2>
 
-      <p class="text-slate-300 text-lg md:text-xl mt-4 max-w-xl">
+      <p class="intro">
         Mahasiswa yang tertarik dengan hal-hal yang berkaitan dengan Audio Engineering, Musik, Game Development, Illustration, Animation dan banyak hal lainnya.
       </p>
 
       <a
         href="#contact"
-        class="inline-block mt-8 bg-blue-500 hover:bg-blue-600
-               px-6 py-3 rounded-lg font-semibold"
+        class="button"
       >
         Lihat Project
       </a>
@@ -50,8 +68,8 @@
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="text-center p-6 border-t border-slate-700">
-    <p class="text-slate-400">
+  <footer id="contact">
+    <p>
       © 2026 Galang. All Rights Reserved.
     </p>
   </footer>
