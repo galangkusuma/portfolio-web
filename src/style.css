@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-:root { font-family: "DM Sans", "Trebuchet MS", sans-serif; color: #1c1917; background: #f8f7f3; font-synthesis: none; }
+:root { font-family: "Manrope", "Trebuchet MS", sans-serif; color: #1c1917; background: #f8f7f3; font-synthesis: none; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; background: #f8f7f3; }
 a { transition: color .2s ease, transform .2s ease; }
 a:hover { color: #ed5d43; }
-.brand { color: #1c1917; font-size: 1.25rem; font-weight: 900; letter-spacing: -.06em; }
+.brand { color: #1c1917; font-size: 1.25rem; font-weight: 800; letter-spacing: -.06em; }
 .brand span, .text-coral { color: #ed5d43; }
 .nav-link { position: relative; }
 .nav-link.active { color: #1c1917; }
@@ -28,9 +29,23 @@ em { color: #ed5d43; font-family: Georgia, serif; font-weight: 400; }
 .art-note { background: #1c1917; bottom: 40px; color: #fff; font-size: .65rem; line-height: 1.4; padding: 15px; position: absolute; right: 28px; transform: rotate(8deg); }.art-note b { color: #f0b52f; }
 .ticker { overflow: hidden; white-space: nowrap; }.ticker div { animation: ticker 24s linear infinite; color: #8a857c; font-size: .75rem; font-weight: 800; letter-spacing: .2em; padding: 15px 0; width: max-content; }.ticker span { color: #ed5d43; padding: 0 1.5rem; }
 .section-title { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; letter-spacing: -.06em; line-height: 1; }.section-title em { color: #1c1917; }
-.project-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 350px; padding: 24px; transition: transform .25s ease; }.project-card:hover { transform: translateY(-7px) rotate(-1deg); }.project-card h3 { font-size: 2rem; font-weight: 800; letter-spacing: -.06em; margin: 1rem 0 .6rem; }.project-card p { color: #57534e; font-size: .9rem; line-height: 1.5; max-width: 240px; }.project-card > a { align-self: flex-end; color: #1c1917; font-size: 2rem; }.project-number { font-size: .75rem; font-weight: 800; }.project-yellow { background: #f0b52f; }.project-pink { background: #f2a5a0; }.project-blue { background: #a9c6d5; }
+.project-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 300px; padding: 24px; transition: transform .25s ease; }.project-card:hover { transform: translateY(-7px) rotate(-1deg); }.project-card h3 { font-size: 2rem; font-weight: 800; letter-spacing: -.06em; margin: 1rem 0 .6rem; }.project-card p { color: #57534e; font-size: .9rem; line-height: 1.5; max-width: 300px; }.project-card > a { align-self: flex-end; color: #1c1917; font-size: 2rem; }.project-number { font-size: .75rem; font-weight: 800; }.project-yellow { background: #f0b52f; }.project-pink { background: #f2a5a0; }.project-blue { background: #a9c6d5; }.project-lilac { background: #c9b9d9; }
+.toolkit-band { align-items: center; background: #e7e1d7; display: grid; gap: 40px; grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr); padding: clamp(24px, 5vw, 50px); }
+.principle-grid { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.principle-grid span { background: #f8f7f3; border: 1px solid #d5cec1; font-family: "DM Mono", monospace; font-size: .72rem; padding: 14px 12px; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+.principle-grid span:hover { background: #f0b52f; border-color: #1c1917; transform: translateY(-3px); }
 .about-band { border-left: 5px solid #ed5d43; padding: 15px 0 15px 25px; }
 .task-layout { display: grid; gap: 24px; grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); }.task-form { background: #fff; border: 1px solid #e7e2d8; padding: clamp(24px, 5vw, 50px); }.choice { align-items: center; border: 1px solid #e7e2d8; cursor: pointer; display: flex; gap: 12px; justify-content: space-between; padding: 15px; transition: border .2s, background .2s; }.choice:has(input:checked) { background: #fff2d1; border-color: #f0b52f; }.choice input { accent-color: #ed5d43; height: 17px; width: 17px; }.choice span { display: flex; flex: 1; flex-direction: column; gap: 3px; }.choice b { font-size: .9rem; }.choice small, .choice strong { color: #78716c; font-size: .7rem; }.result-panel { background: #1c1917; color: #fff; display: flex; flex-direction: column; min-height: 480px; padding: clamp(24px, 5vw, 50px); }.total-price { display: block; color: #f0b52f; font-family: Georgia, serif; font-size: clamp(2.5rem, 5vw, 4rem); margin-top: 10px; }
+.field { display: block; font-size: .8rem; font-weight: 800; text-transform: uppercase; }
+.field > div { align-items: center; border-bottom: 2px solid #1c1917; display: flex; margin-top: 10px; }
+.field input { background: transparent; border: 0; color: #1c1917; font-family: "DM Mono", monospace; font-size: 2.2rem; min-width: 0; outline: 0; padding: 8px 0; width: 100%; }
+.field input:focus-visible { box-shadow: 0 3px 0 #ed5d43; }
+.field b { color: #78716c; font-family: "DM Mono", monospace; font-size: .75rem; }
+.formula-hint { background: #fff2d1; color: #57534e; font-family: "DM Mono", monospace; font-size: .75rem; margin-top: 34px; padding: 12px 14px; }
+.geometry-mark { color: #ed5d43; font-family: Georgia, serif; font-size: 3rem; line-height: 1; transform: skewX(-12deg); }
+.shape-preview { border: 1px solid #47403b; height: 70px; margin-top: 32px; overflow: hidden; position: relative; }
+.shape-preview span { background: #f0b52f; height: 42px; left: 24%; position: absolute; top: 14px; transform: skewX(-25deg); width: 48%; }
+button:focus-visible, a:focus-visible { outline: 3px solid #f0b52f; outline-offset: 4px; }
 @keyframes ticker { to { transform: translateX(-30%); } }
-@media (max-width: 800px) { .hero-grid, .task-layout { grid-template-columns: 1fr; }.hero-art { height: 330px; max-width: 480px; }.display { font-size: clamp(3.2rem, 15vw, 6rem); }.task-layout { gap: 16px; } }
+@media (max-width: 800px) { .hero-grid, .task-layout, .toolkit-band { grid-template-columns: 1fr; }.hero-art { height: 330px; max-width: 480px; }.display { font-size: clamp(3.2rem, 15vw, 6rem); }.task-layout { gap: 16px; } }
 @media (max-width: 480px) { .project-card { min-height: 280px; }.hero-art { height: 280px; }.art-ring { height: 190px; width: 190px; }.art-card { bottom: 20px; left: 15px; }.art-note { bottom: 20px; right: 15px; } }
